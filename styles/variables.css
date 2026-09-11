@@ -1,0 +1,13 @@
+:root {
+  /*colors*/
+  --color-neutral-0: #fff;
+  --color-neutral-600: #6c6c6c;
+  --color-neutral-800: #1c1c1c;
+
+  /*text*/
+
+  --text-h1: 700 32px/40px 'Source Sans 3';
+  --text-h2: 700 24px/32px 'Source Sans 3';
+  --text-h3: 700 18px/24px 'Source Sans 3';
+  --text-body-md-reg: 400 16px/24px 'Source Sans 3';
+}

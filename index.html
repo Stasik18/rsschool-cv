@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+
     <title>CV</title>
 </head>
 
-<body></body>
+<body>
+
+    <div class="wrapper">
+        <h1 class="visuallyHidden">CV по проекту rsschool-cv</h1>
+        <header class="header">CV</header>
+        <main class="mainContent">
+            <section class="left">
+                <h2 class="visuallyHidden">Фото Автора</h2>
+                <img alt="Фото Автора" src="/public/photo_2026-05-24_15-21-44.jpg" height="300" width="290">
+            </section>
+            <section class="right">
+                <h2 class="rightHeader"> Информация об авторе</h2>
+                <ul class="list">
+                    <li class="item item-0">Меня зовут Стас</li>
+                    <li class="item item-1">Мне 23, Фулл-тайм в учёбе, всегда рад новым знакомствам, служил в армии,
+                        учился в БГУИР (не выпустился)</li>
+                    <li class="item item-2">Навыки, по убыванию уровня знаний в теме: JavaScript, HTML5,
+                        CSS3/SASS/SCSS/CSS nesting, React, Семантическая верстка, Адаптивная верстка, TypeScript,
+                        Prisma, REST API, Redux, RTK, RTK Query, Zustand, RHF, Zod, Tanstack Form, Next</li>
+                    <li class="item item-3">Без опыта работы, писал всё сам, не много участвовал с стартапах, учился на
+                        PREAX, получил там хорошие основы, все технологии изучал сам + вопросы к компетентным друзям,
+                        когда были затупы </li>
+                    <li class="item item-4">Образование 11 классов</li>
+                    <li class="item item-5">Мой уровень Английского А2-А1, понимаю с большего доку, сам ни б ни м, НО
+                        исправляюсь</li>
+                    <li class="item item-6">Пример интересного кода, Не классический алгоритм Фишера:
+                        <pre><code class="language-javascript">
+                            export const shuffle = (arr) => {
+                        const jobbing = [...arr]
+
+                        let j, temp
+                        for (let i = jobbing.length - 1; i > 0; i--) {
+                            j = Math.floor(Math.random() * (i + 1))
+                            temp = jobbing[j]
+                            jobbing[j] = jobbing[i]
+                            jobbing[i] = temp
+                        }
+
+                        return jobbing
+                        }
+
+                        }
+                    </code></pre>
+                    </li>
+
+                </ul>
+                <div class="contacts">
+                    <h3>Мои контакты</h3>
+                    <nav>
+                        <ul>
+                            <li><a rel="noopener noreferrer" target="_blank"
+                                    href="mailto:rosgard000@gmail.com">Gmail</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://t.me/StasBgtk">Telegram</a>
+                            </li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/Stasik18">Git</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            Проект rsschool-cv
+            <a rel="noopener noreferrer" target="_blank" href="https://app.rs.school/course/score?course=js-fe-2026Q3"
+                class="footerLink logo">
+                <img height="40" width="100" alt="logo-rsschool" src="/public/favicon.svg">
+            </a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/Stasik18" class="footerLink autor">
+                АВТОР
+            </a>
+        </footer>
+    </div>
+
+</body>
 
 </html>
