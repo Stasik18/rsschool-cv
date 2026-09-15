@@ -49,6 +49,13 @@ html {
     gap: 10px;
     color: var(--color-neutral-800);
     font: var(--text-body-md-reg);
+    max-width: 750px;
+
+    .item-2 > ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+    }
   }
 
   .contacts {
