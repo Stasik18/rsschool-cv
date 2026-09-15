@@ -1,0 +1,122 @@
+html {
+  background-color: var(--color-neutral-600);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: var(--color-neutral-0);
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100dvh;
+}
+
+.header {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  padding: 16px 24px;
+  color: var(--color-neutral-800);
+  font: var(--text-h1);
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rightHeader {
+    font: var(--text-h2);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-neutral-800);
+    font: var(--text-body-md-reg);
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: var(--text-body-md-reg);
+
+    & a {
+      transition:
+        color ease 0.2s,
+        box-shadow ease 0.2s;
+      color: var(--color-neutral-600);
+      font: var(--text-h3);
+      text-decoration: underline;
+      border-radius: 8px;
+
+      &:hover {
+        color: var(--color-neutral-800);
+      }
+      &:focus-visible {
+        outline: none;
+        box-shadow:
+          0 0 0 2px var(--color-neutral-0),
+          0 0 0 4px var(--color-neutral-800);
+        color: var(--color-neutral-800);
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--color-neutral-0);
+  padding: 16px 24px;
+  color: var(--color-neutral-600);
+  font: var(--text-body-md-reg);
+}
+
+.footerLink {
+  transition:
+    color ease 0.2s,
+    box-shadow ease 0.2s;
+  color: var(--color-neutral-600);
+  font: var(--text-body-md-reg);
+  border-radius: 8px;
+  & .logo {
+    width: 100px;
+  }
+
+  &:hover {
+    color: var(--color-neutral-800);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px var(--color-neutral-0),
+      0 0 0 4px var(--color-neutral-800);
+    color: var(--color-neutral-800);
+  }
+}
+
+.autor {
+  font: var(--text-h3);
+}
